@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="../static/css/veh_detail/detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <section class="logoandnamebox">
+        <img class="image" src="/image/NPD.png" alt="NPD logo" />
+        <div class="logo-name">Number Plate <span>Detection</span></div>
+      </section>
+    </header>
+
+    <section class="container">
+        <div class="detail container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <!-- <br> -->
+                <hr style="border-width: 1px" />
+                <h1 class="detail-name">VEHICLE <span>DETAILS</span></h1>
+                <hr style="border-width: 1px" />
+                <br>
+
+                <div class="input-field">
+                    Name : {{owner_name_ret}}
+                    <!-- <input id="name" type="text" placeholder="" /> -->
+                </div>
+                <div class="input-field">
+                    Number Plate : {{number_plate_ret}}
+                    <!-- <input id="number_plate" type="text" placeholder="" /> -->
+                </div>
+                <div class="input-field">
+                  Contact Number : {{mob_no_ret}}
+                  <!-- <input id="fuel" type="text" placeholder="" /> -->
+              </div>
+                <div class="input-field">
+                    Fuel : {{Fuel_type_ret}}
+                    <!-- <input id="fuel" type="text" placeholder="" /> -->
+                </div>
+                <div class="input-field">
+                    Chassis Number : {{chassis_no_ret}}
+                    <!-- <input id="status" type="text" placeholder="" /> -->
+                </div>
+                <div class="input-field">
+                    Color : {{color_ret}}
+                    <!-- <input id="color" type="text" placeholder="" /> -->
+                </div>
+                <div class="input-field">
+                    Engine Number : {{en_no_ret}}
+                    <!-- <input id="rto" type="text" placeholder="" /> -->
+                </div>
+
+                <div class="input-field">
+                    Registered Date : {{reg_date_ret}}
+                    <!-- <input id="registering_date" type="text" placeholder="" /> -->
+                </div>
+
+                <div class="input-field">
+                    Office Name : {{ofc_name_ret}}
+                    <!-- <input id="vehicle_class" type="text" placeholder="" /> -->
+                </div>
+                
+                <div class="input-field">
+                    Insurance Valid Up To : {{ins_upto_ret}}
+                    
+                </div>
+                <div class="input-field">
+                    Fitness Valid Up To : {{fit_upto_ret}}
+                    <!-- <input id="fitness" type="text" placeholder="" /> -->
+                </div>
+
+                <div class="btn-field">
+                <button type="button" id="submit">
+                    <a href="{{url_for('index')}}" >GO TO HOME PAGE</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="circle circle-two"></div>
+      </div>
+    </section>
+
+    <!-- Copyright section -->
+    <div class="copyright">
+      <small>Copyright &copy; By: NPD</small>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 Number Plate Detection - All Rights Reserved.</p>
+        <div class="foot">
+          <a href="#" class="a">Privacy Policy</a>
+          <span class="text-white">|</span>
+          <a href="#" class="a">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function auth() {
+        window.location.href = "main.html";
+      }
+    </script>
+  </body>
+</html>
